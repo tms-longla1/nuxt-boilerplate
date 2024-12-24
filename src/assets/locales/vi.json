@@ -1,0 +1,10 @@
+{
+  "common": {
+    "sign_in_title": "Đăng nhập vào tài khoản của bạn",
+    "username": "Tên người dùng",
+    "password": "Mật khẩu",
+    "sign_in": "Đăng nhập",
+    "remember_me": "Lưu mật khẩu",
+    "forgot_password": "Quên mật khẩu?"
+  }
+}
