@@ -1,9 +1,10 @@
 import type { FetchContext } from 'ofetch'
 
 export default defineNuxtPlugin(() => {
+  const config = useRuntimeConfig()
   // Tạo instance fetch tùy chỉnh
   const customFetch = $fetch.create({
-    baseURL: 'https://dummyjson.com' as string,
+    baseURL: config.public.apiUrl as string,
     // Interceptor cho request
     onRequest(context: FetchContext) {
       // Lấy token từ cookie hoặc request headers

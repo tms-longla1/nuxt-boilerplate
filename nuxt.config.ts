@@ -7,6 +7,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
 
+  // Runtime Config
+  runtimeConfig: {
+    public: {
+      apiUrl: process.env.NUXT_PUBLIC_API_URL
+    }
+  },
+
   // 2. Source directory config
   srcDir: 'src',
   components: [
